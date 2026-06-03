@@ -1,0 +1,157 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    /* Background Image setup */
+    background-image: url('bg-image.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: url(bg-image.jpeg); /* Fallback color */
+
+    display: flex;
+    /* Move the card to the LEFT side because the burger is on the RIGHT in your image */
+    justify-content: flex-start;   
+    align-items: center;
+    min-height: 100vh;
+    padding-left: 10%; /* Space from the left edge */
+    color: #1f2937;
+}
+
+/* Glassmorphism Login Card Container */
+.login-container {
+    background-color: rgba(255, 255, 255, 0.85); 
+    backdrop-filter: blur(12px); 
+    -webkit-backdrop-filter: blur(12px);
+    
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4); 
+    width: 100%;
+    max-width: 420px;
+    border: 1px solid rgba(255,255,255,0.5);
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.login-header h2 {
+    font-size: 1.85rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #991b1b; 
+}
+
+.login-header p {
+    font-size: 0.9rem;
+    color: #4b5563;
+}
+
+/* Form Styles */
+.input-group {
+    margin-bottom: 1.5rem;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #374151;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #e5e7eb;
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #ef4444; 
+    box-shadow: 0 0 0 4px rgba(239, 68, 68, 0.1);
+}
+
+.error-message {
+    display: block;
+    color: #ef4444;
+    font-size: 0.75rem;
+    font-weight: 500;
+    margin-top: 0.3rem;
+    min-height: 1rem;
+}
+
+/* Actions (Remember me & Forgot Password) */
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #4b5563;
+}
+
+.forgot-password {
+    color: #dc2626;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Submit Button */
+.submit-btn {
+    width: 100%;
+    padding: 0.85rem;
+    background-color: #dc2626; 
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    box-shadow: 0 4px 6px rgba(220, 38, 38, 0.3);
+}
+
+.submit-btn:hover {
+    background-color: #b91c1c;
+    transform: translateY(-1px);
+}
+
+.submit-btn:active {
+    transform: translateY(1px);
+}
+
+/* Responsive adjust for small screens */
+@media (max-width: 800px) {
+    body {
+        justify-content: center;
+        padding: 1rem;
+    }
+}
+
+///
+
+///
